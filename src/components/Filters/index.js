@@ -1,15 +1,16 @@
 import React from "react"
+import { FilterContainer } from "./style"
 
 export function Filters(){
-    return <div>
-        <input 
+    return <FilterContainer>
+        <input className="Pesquisar"
             placeholder="Pesquisa"
         />
-        <input 
+        <input className="Price"
             type="number"
             placeholder="Preço mínimo"
         />
-        <input
+        <input className="Price"
              type="number"
              placeholder="Preço máximo"
         />
@@ -17,7 +18,7 @@ export function Filters(){
         
         
         
-    </div>
+    </FilterContainer>
     
     
 }
