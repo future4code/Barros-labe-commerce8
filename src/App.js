@@ -9,6 +9,7 @@ function App() {
     return <CardHome img={item.img} nome={item.name} valor={item.price} />
   })
 
+    
   return (
     <>
       <Header>
