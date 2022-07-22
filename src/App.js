@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import CardHome from './Components/Home/CardHome'
 import { satList } from './mocDados'
 import { Header, Header2, Container } from '../src/Components/Home/styledHome'
+
+
+
 function App() {
   const [itens, setItens] = useState(satList)
 
@@ -13,7 +16,9 @@ function App() {
   return (
 
     <>
+    
       <Header>
+        
         <span>Quantidade de Produtos: </span>
         <div>
           <label>Ordenação</label>
@@ -25,6 +30,7 @@ function App() {
       </Header>
       
       <Container>{dadosRenderizados}</Container>
+    
     </>
   )
 
