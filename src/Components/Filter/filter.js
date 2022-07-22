@@ -1,18 +1,24 @@
 import React from "react"
-import { FilterContainer } from "./StyleFilter"
+import { FilterContainer } from "./stylefilter"
 
-export function Filters(){
+function Filters(props){
     return <FilterContainer>
         <input className="Pesquisar"
-            placeholder="Pesquisa"
+            placeholder="Pesquisar"
+            value={props.buscar}
+            onChange={(ev) => props.setBuscar(ev.target.value)}
         />
-        <input className="Price"
+        <input className="PriceMin"
             type="number"
             placeholder="Preço mínimo"
+            value={props.minPrice}
+            onChange={(ev) => props.setMinPrice(ev.target.value)}
         />
-        <input className="Price"
+        <input className="PriceMax"
              type="number"
              placeholder="Preço máximo"
+             value={props.maxPrice}
+             onChange={(ev) => props.setMaxPrice(ev.target.value)}
         />
 
         
@@ -22,3 +28,4 @@ export function Filters(){
     
     
 }
+export default Filters
