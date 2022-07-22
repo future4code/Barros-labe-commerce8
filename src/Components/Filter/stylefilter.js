@@ -9,7 +9,7 @@ export const FilterContainer=styled.div`
         padding: 5px;
     }
     .Price{
-        diplay: flex;
+        display: flex;
         width: 128px;
         margin:2px;
         padding: 5px;
