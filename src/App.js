@@ -11,6 +11,7 @@ function App() {
 
     
   return (
+
     <>
       <Header>
         <span>Quantidade de Produtos: </span>
@@ -26,6 +27,7 @@ function App() {
       <Container>{dadosRenderizados}</Container>
     </>
   )
+
 }
 
 export default App
