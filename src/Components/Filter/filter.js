@@ -1,7 +1,7 @@
 import React from "react"
-import { FilterContainer } from "./StyleFilter"
+import {FilterContainer} from "./stylefilter"
 
-export function Filters(){
+function Filters(){
     return <FilterContainer>
         <input className="Pesquisar"
             placeholder="Pesquisa"
@@ -22,3 +22,5 @@ export function Filters(){
     
     
 }
+
+export default Filters

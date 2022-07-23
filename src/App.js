@@ -2,22 +2,23 @@
 import React, { useState } from 'react'
 import CardHome from './Components/Home/CardHome'
 import { satList } from './mocDados'
-import { Header, Header2, Container } from '../src/Components/Home/styledHome'
+import { Header, Container } from '../src/Components/Home/styledHome'
+import Filters from "./Components/Filter/filter"
 
 
 
 function App() {
-  const [itens, setItens] = useState(satList)
+  const [itens] = useState(satList)
+  const [buscar, setBuscar] = useState("")
+  const [minPrice, setMinPrice] = useState(-Infinity)
+  const [maxPrice, setMaxPrice] = useState(Infinity)
 
-  const dadosRenderizados = itens.map(item => {
-    return <CardHome img={item.img} nome={item.name} valor={item.price} />
-  })
-
+ 
     
   return (
 
     <>
-    
+      
       <Header>
         
         <span>Quantidade de Produtos: </span>
@@ -29,8 +30,34 @@ function App() {
           </select>
         </div>
       </Header>
+      <Filters
+        buscar={buscar}
+        minPrice={minPrice}
+        maxPrice={maxPrice}
+        setBuscar={setBuscar}
+        setMinPrice={setMinPrice}
+        setMaxPrice={setMaxPrice}
+      />
+  
+      <Container>
+      {itens
+        .filter(item => {
+          return item.name.toLowerCase().includes(buscar.toLowerCase())
+        })
+        .filter(item=> {
+          return item.price >= minPrice || minPrice === ""
+        })
+        .filter(item => {
+          return item.price <= maxPrice || maxPrice === ""
+        })
+        .map(item => {
+        return <CardHome img={item.img} nome={item.name} valor={item.price} />
+    
+  })
+}
+        </Container>
       
-      <Container>{dadosRenderizados}</Container>
+
     
     </>
   )
