@@ -1,26 +1,20 @@
 import styled from "styled-components";
 
 export const FilterContainer=styled.div`
-    width: 300px;
+    width: 310px;
     margin-left: 0px;
     .Pesquisar{
-        width: 275px;
-        margin:2px;
+        width: 279px;
+        margin:5px;
         padding: 5px;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
     }
-    .PriceMin{
+    .Price{
         diplay: flex;
         width: 128px;
-        margin:2px;
+        margin:5px;
         padding: 5px;
-        border-radius: 0px 0px 0px 10px;
+        border-radius: 10px;
    }
-   .PriceMax{
-    diplay: flex;
-    width: 128px;
-    margin:2px;
-    padding: 5px;
-    border-radius: 0px 0px 10px 0px;
-    }
+   
 `

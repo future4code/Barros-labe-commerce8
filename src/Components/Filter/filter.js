@@ -8,13 +8,13 @@ function Filters(props){
             value={props.buscar}
             onChange={(ev) => props.setBuscar(ev.target.value)}
         />
-        <input className="PriceMin"
+        <input className="Price"
             type="number"
             placeholder="Preço mínimo"
             value={props.minPrice}
             onChange={(ev) => props.setMinPrice(ev.target.value)}
         />
-        <input className="PriceMax"
+        <input className="Price"
              type="number"
              placeholder="Preço máximo"
              value={props.maxPrice}
