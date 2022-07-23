@@ -1,8 +1,13 @@
+
 import React, { useState } from 'react'
 import CardHome from './Components/Home/CardHome'
 import { satList } from './mocDados'
 import { Header, Container } from '../src/Components/Home/styledHome'
 import Filters from './Components/Filter/filter'
+import Carrinho from './Components/Carrinho/Carrinho'
+
+
+
 
 function App() {
   const [itens] = useState(satList)
@@ -12,10 +17,10 @@ function App() {
 
  
     
+  
   return (
-
-    <>
-      
+ 
+    <>   
       <Header>
         
         <span>Quantidade de Produtos: </span>
@@ -55,16 +60,16 @@ function App() {
         </Container>
       
 
-    
-    </>
-  )
 
+      
+
+    <Carrinho/>
+    
+    
+    
+  
+  </>
+  );
 }
 
-export default App
-
-
-
-
-
-
+export default App; 

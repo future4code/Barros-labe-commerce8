@@ -1,5 +1,7 @@
 import React from "react"
-import { FilterContainer } from "./stylefilter"
+
+import {FilterContainer} from "./stylefilter"
+
 
 function Filters(props){
     return <FilterContainer>
@@ -28,4 +30,5 @@ function Filters(props){
     
     
 }
+
 export default Filters

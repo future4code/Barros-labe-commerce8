@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const FilterContainer=styled.div`
     width: 310px;
     margin-left: 0px;
@@ -10,7 +11,7 @@ export const FilterContainer=styled.div`
         border-radius: 10px;
     }
     .Price{
-        diplay: flex;
+        display: flex;
         width: 128px;
         margin:5px;
         padding: 5px;
@@ -18,3 +19,4 @@ export const FilterContainer=styled.div`
    }
    
 `
+
