@@ -17,4 +17,6 @@ export const FilterContainer=styled.div`
         padding: 5px;
         border-radius: 10px;
    }
-   `
+   
+`
+

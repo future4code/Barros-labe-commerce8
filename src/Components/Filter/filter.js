@@ -1,5 +1,7 @@
 import React from "react"
+
 import {FilterContainer} from "./stylefilter"
+
 
 function Filters(props){
     return <FilterContainer>
