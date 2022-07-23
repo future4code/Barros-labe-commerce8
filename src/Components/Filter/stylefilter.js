@@ -11,7 +11,7 @@ export const FilterContainer=styled.div`
         border-radius: 10px;
     }
     .Price{
-        diplay: flex;
+        display: flex;
         width: 128px;
         margin:5px;
         padding: 5px;
